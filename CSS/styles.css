@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+.title {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Bad Script', cursive;
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    font-size: 6vw;
+    left: 0px;
+    right: 0px;
+    top: -45%;
+}
+
+h2 span {
+    animation: animate 3s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+        color: #fff;
+        filter: blur(2px) hue-rotate(0deg);
+        /* filter: blur(-15px) hue-rotate(0deg); */
+        text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 400px #00b3ff
+    }
+    30%,
+    70% {
+        color: #fff;
+        filter: blur(0px) hue-rotate(360deg);
+        text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 400px #00b3ff
+    }
+    100% {
+        color: transparent;
+        box-shadow: none;
+        filter: blur(0px) hue-rotate(0deg);
+    }
+}
+
+
+/* NEW */
+
+.container {
+    width: 460px;
+    height: 466px;
+    position: relative;
+}
+
+.card_child {
+    position: absolute;
+}
+
+.container .square {
+    position: absolute;
+    width: 460px;
+    height: 350px;
+    overflow: hidden;
+    transition: all 1s;
+    /* transform: scale(0.5); */
+}
+
+.container .square.active {
+    transition-delay: 2s;
+    border: 2px solid rgb(0, 187, 255);
+    transform: rotate(calc(8deg * var(--i)));
+    box-shadow: 0px 0px 5px blue;
+}
+
+.container .square.active1 {
+    transition-delay: 2s;
+    border: 2px solid rgb(0, 187, 255);
+    transform: rotate(calc(-8deg * var(--i)));
+    box-shadow: 0px 0px 5px blue;
+}
+
+.container .square.active2 {
+    transition-delay: 2s;
+    border: 2px solid rgb(0, 187, 255);
+    transform: rotate(calc(8deg * var(--i)));
+    box-shadow: 0px 0px 5px blue;
+}
+
+.container .square.active3 {
+    transition-delay: 2s;
+    border: 2px solid rgb(0, 187, 255);
+    transform: rotate(calc(-8deg * var(--i)));
+    box-shadow: 0px 0px 5px blue;
+}
+
+.container .square.active6 {
+    transition-delay: 2s;
+    border: 2px solid rgb(0, 187, 255);
+    transform: rotate(calc(deg * var(--i)));
+    box-shadow: 0px 0px 5px blue;
+}
+
+#card .card_child {
+    /* display: none; */
+    position: absolute;
+    height: auto;
+    width: 460px;
+    border-radius: 10px;
+    background-color: white;
+    background-image: url("https://image.freepik.com/free-vector/open-gift-box-with-heart-shape-confetti-burst-explosion-3d-valentines-day-romantic-gift_165143-438.jpg");
+    background-size: 50vh, 70vh;
+    box-shadow: 0px 0px 20px red;
+    transform: rotate(0deg);
+}
+
+#card .img_contain {
+    margin: auto;
+    padding: 5%;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 red;
+    width: 40px;
+    height: 40px;
+}
+
+h4 {
+    text-align: center;
+    -webkit-text-fill-color: rgba(0, 200, 200, 0.1);
+    -webkit-background-clip: text;
+    background-image: url("https://i.pinimg.com/originals/20/21/7f/20217f7fa2c9701b8128d8fb153a4db9.gif");
+    font-family: 'Allura', cursive;
+    padding: -2%;
+    font-size: 19px;
+    overflow: hidden;
+}
+
+.card-show {
+    opacity: 1 !important;
+    left: 0 !important;
+    transition: all 2s;
+}

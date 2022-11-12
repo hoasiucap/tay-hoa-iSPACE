@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(15, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100;
+    overflow: hidden;
+}
+
+#teacher {
+    top: 20%;
+    font-size: 4px;
+    line-height: 4px;
+    text-align: justify;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    /* background: url(back44.png) no-repeat center; */
+}
+
+h1 {
+    display: flex;
+    font-family: 'Bad Script', cursive;
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-size: 8em;
+}
+
+h1 span {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #f89705, 0 0 20px #f89705, 0 0 40px #f89705, 0 0 80px #f89705, 0 0 120px #f89705, 0 0 200px #f89705
+    }
+    5%,
+    95% {
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+
+.heartLeft {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: #fd0e42;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px #fd0e42;
+}
+
+.hearBxLeft {
+    opacity: 0.8;
+    top: 50% !important;
+    position: absolute;
+    left: 25% !important;
+    animation: animateHert alternate 0.5s infinite;
+    top: 0;
+}
+
+.hearBxRight {
+    opacity: 0.8;
+    top: 50% !important;
+    position: absolute;
+    right: 25% !important;
+    animation: animateHert alternate 0.5s infinite;
+    top: 0;
+}
+
+.heartRight {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: #fd0e42;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px #fd0e42;
+}
+
+.heartLeft::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    border-radius: 50%;
+    background: #fd0e42;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px #fd0e42;
+}
+
+.heartLeft::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: 0;
+    border-radius: 50%;
+    background: #fd0e42;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px #fd0e42;
+}
+
+.heartRight::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    border-radius: 50%;
+    background: #fd0e42;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px #fd0e42;
+}
+
+.heartRight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: 0;
+    border-radius: 50%;
+    background: #fd0e42;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px #fd0e42;
+}
+
+@keyframes animateHert {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}

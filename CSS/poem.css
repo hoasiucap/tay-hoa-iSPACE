@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Dancing+Script&display=swap');
+.card_poem {
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    right: 5%;
+    bottom: 11%;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+}
+
+.card_poem:hover {
+    transform: rotate(-5deg);
+}
+
+.card_poem:hover .outside {
+    transform: rotateY(-130deg);
+}
+
+.outside,
+.inside,
+.inside1 {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+}
+
+.inside {
+    box-shadow: 2px 2px 2px 2px #000;
+    box-sizing: border-box;
+    /* background: linear-gradient(to right, #e0e0e0, #ffffff 30%); */
+    line-height: 3;
+    padding: 0 20px;
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+}
+
+.inside1 {
+    box-shadow: 2px 2px 2px 2px #000;
+    box-sizing: border-box;
+    /* background: linear-gradient(to right, #e0e0e0, #ffffff 30%); */
+    line-height: 3;
+    padding: 0 20px;
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+}
+
+.inside1 h1 {
+    display: block;
+    top: -90px;
+    text-align: right;
+    font-size: 50px;
+}
+
+.inside1 p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 4px 0;
+}
+
+.outside {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+}
+
+.outside .outside_font {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    background-color: #fff;
+    z-index: 1;
+}
+
+.outside p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+    font-size: 23px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #000046;
+}
+
+.inside h1 {
+    display: block;
+    top: -90px;
+    text-align: right;
+    font-size: 50px;
+}
+
+.inside p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-top: 8px;
+}
+
+.back_poem {
+    cursor: pointer;
+    position: absolute;
+    display: inline-flex;
+    width: 90%;
+    font-size: 46px;
+    bottom: 6px;
+}
+
+.back_poem:hover,
+.next_poem:hover {
+    opacity: 0.7;
+}
+
+.next_poem {
+    cursor: pointer;
+    position: absolute;
+    width: 90%;
+    display: inline-flex;
+    font-size: 46px;
+    bottom: 6px;
+}
+
+.none {
+    display: none;
+}

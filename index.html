@@ -1,0 +1,185 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/canvas.css">
+    <link rel="stylesheet" href="./CSS/music.css">
+    <link rel="stylesheet" href="./CSS/present.css">
+    <link rel="stylesheet" href="./CSS/card.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/poem.css">
+    <link rel="stylesheet" href="./CSS/menu.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+
+<body>
+    <div class="parent">
+        <canvas id="canvas"></canvas>
+        <h2 class="title">
+            <span style="--i:1;">H</span>
+            <span style="--i:2;">a</span>
+            <span style="--i:3;">p</span>
+            <span style="--i:4;">p</span>
+            <span style="--i:5;">y</span>
+            <span style="--i:6; margin-left:5vw;">T</span>
+            <span style="--i:7;">e</span>
+            <span style="--i:8;">a</span>
+            <span style="--i:9;">c</span>
+            <span style="--i:10;">h</span>
+            <span style="--i:11;">e</span>
+            <span style="--i:12;">a</span>
+            <span style="--i:13;">r</span>
+            <span style="--i:14;">s</span>
+            <span style="--i:15;margin-left:5vw;">D</span>
+            <span style="--i:16;">a</span>
+            <span style="--i:17;">y</span>
+        </h2>
+        <section class="above-fold">
+            <div class="wrap-present">
+                <div class="present-box" id="present">
+                    <div class="present">
+                        <div class="img-wrap" id="present-image">
+
+                        </div>
+                    </div>
+                    <div class="side front"></div>
+                    <div class="side back"></div>
+                    <div class="side left"></div>
+                    <div class="side right"></div>
+                    <div class="side top">
+                        <span class="to">
+                    <span class="name" id="nametag">
+                    </span>
+                        </span>
+                    </div>
+                    <div class="side bottom"></div>
+                </div>
+            </div>
+            <!-- <p class="info-text">Click to Open</p> -->
+        </section>
+    </div>
+    <div class="music" style="background: url('./img/back3.jpg');">
+        <h2 class="title_music">Music Name</h2>
+        <h3 class="author">Juky San</h3>
+        <div class="player">
+            <audio src=""></audio>
+            <div class="btns">
+                <span class="prev">
+                    <ion-icon name="play-skip-back" style="font-size: 3em;"></ion-icon>
+                    </span>
+                <span class="playPause">
+                    <ion-icon name="play"></ion-icon>
+                    </span>
+                <span class="next">
+                    <ion-icon name="play-skip-forward" style="font-size: 3em;"></ion-icon>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <div class="card_child" style="z-index: 999;">
+            <h4 style="font-family:'Dancing Script', cursive ;">💘Lời chúc💘</h4>
+
+            <img src="./img/R.png" class="teacher" alt="" />
+
+            <h4 style="font-family:'Dancing Script', cursive ">20/11 Tây và Hòa kính chúc quý thầy cô một ngày nạp đầy tràn năng lượng, chèo lái đưa những con thuyền ra biển lớn. Kính chúc thầy cô và gia đình luôn luôn MẠNH – HẠNH – ĐẠT.💘
+            </h4>
+
+        </div>
+        <div class="container">
+            <div class="square " style="--i:1" class="img_contain">
+                <img src="./img/back.jpg" alt="">
+            </div>
+            <div class="square" style="--i:2" class="img_contain">
+                <img src="./img/back.jpg" alt="">
+            </div>
+            <div class="square" style="--i:3" class="img_contain">
+                <img src="./img/back.jpg" alt="">
+            </div>
+            <div class="square" style="--i:4" class="img_contain">
+                <img src="./img/back.jpg" alt="">
+            </div>
+            <div class="square" style="--i:5" class="img_contain">
+                <img src="./img/back.jpg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="card_poem">
+        <div class="outside" style="background: url('./img/backl1.png') top center">
+            <div class="outside_font" style="background: url('./img/out1.jpg');">
+                <p>Note: 20/11/2022</p>
+            </div>
+        </div>
+        <div class="inside" style="    background: url('./img/backl111.jpg') top center;">
+            <p style="margin-top: 20px; font-size: 23px;">Tri ân</p>
+            <p style="padding-top:15px ;">Bài hát xin tặng các thầy</p>
+            <p>Bông hoa tươi thắm dành tặng cho cô</p>
+            <p>Hộp quà, lời chúc trên đây</p>
+            <p style="padding-bottom: 15px; ">Chúng em gửi đến tất cả cô thầy</p>
+            <p style=" text-align:right">~Bùi Tấn Hòa~</p>
+            <div class="next_poem">
+                <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="inside1" style="    background: url('./img/backl111.jpg') top center;">
+            <p style="margin-top: 20px; font-size: 23px;">Bộn bề</p>
+            <p>Một năm mà ngỡ một giờ </p>
+            <p>Bộn bề thêm chút </p>
+            <p>Thế gần một năm </p>
+            <p>Một năm chỉ có một lần</p>
+            <p>Hai mươi mười một </p>
+            <p>Một ngày vui tươi </p>
+            <p>Nhân ngày ý nghĩa</p>
+            <p>Nói ra đôi lời</p>
+            <p>Kính chúc thầy cô</p>
+            <p>Trọn đầy niềm vui</p>
+
+            <p style=" text-align:right; margin-right: -9px;">~Đinh Văn Tây~</p>
+            <div class="back_poem">
+                <ion-icon name="chevron-back-circle-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <ion-icon name="menu"></ion-icon>
+        </label>
+        <label class="logo">Menu</label>
+        <ul>
+            <li id="menu_home">
+                <a href="#" class="active">Home</a>
+            </li>
+            <li id="menu_music">
+                <a href="#">music</a>
+            </li>
+            <li id="menu_poem">
+                <a href="#">poem</a>
+            </li>
+            <li>
+                <a href="./black.html">Black Space</a>
+            </li>
+        </ul>
+
+    </nav>
+    </div>
+
+</body>
+<style>
+
+</style>
+<script src="./JS/canvas.js"></script>
+<script src="./JS/present.js"></script>
+<script src="./JS/music.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="./JS/menu.js"></script>
+<script src="./JS/poem.js"></script>
+
+</html>
