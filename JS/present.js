@@ -1,6 +1,6 @@
 var to = 'Teachers';
 var gift_url = './black.html';
-var gift_image_url = './img/R.png';
+var gift_image_url = 'https://hoasiucap.github.io/anh/anh.jpg';
 
 
 
