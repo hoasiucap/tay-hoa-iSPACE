@@ -173,7 +173,7 @@ body {
 }
 
 .present-box>.side.top .to:after {
-    content: "happy teachers day";
+    content: "happy teacher's day";
     display: inline-block;
     transform: rotateY(180deg);
     color: #990000;
