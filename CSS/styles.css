@@ -101,7 +101,7 @@ h2 span {
     /* display: none; */
     position: absolute;
     height: auto;
-    width: 460px;
+    width: 465px;
     border-radius: 10px;
     background-color: white;
     background-image: url("https://image.freepik.com/free-vector/open-gift-box-with-heart-shape-confetti-burst-explosion-3d-valentines-day-romantic-gift_165143-438.jpg");
@@ -129,7 +129,7 @@ h4 {
     background-image: url("https://i.pinimg.com/originals/20/21/7f/20217f7fa2c9701b8128d8fb153a4db9.gif");
     font-family: 'Allura', cursive;
     padding: -2%;
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .card-show {
