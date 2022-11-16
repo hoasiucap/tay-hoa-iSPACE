@@ -75,9 +75,9 @@ h1 span:nth-child(6) {
 @keyframes animate {
     0%,
     50% {
-        color: #fff;
-        filter: blur(2px);
-        text-shadow: 0 0 10px #f89705, 0 0 20px #f89705, 0 0 40px #f89705, 0 0 80px #f89705, 0 0 120px #f89705, 0 0 200px #f89705
+        color: #f89705;
+        filter: blur(0px);
+/*         text-shadow: 0 0 10px #f89705, 0 0 20px #f89705, 0 0 40px #f89705, 0 0 80px #f89705, 0 0 120px #f89705, 0 0 200px #f89705 */
     }
     50%,
     100% {
