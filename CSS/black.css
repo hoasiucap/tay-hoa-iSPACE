@@ -17,7 +17,17 @@ body {
     overflow: hidden;
 }
 
+@keyframes teacher {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 #teacher {
+    animation: teacher alternate 3s infinite;
     top: 20%;
     font-size: 21px;
     line-height: 1px;
@@ -78,10 +88,11 @@ h1 span:nth-child(6) {
         color: #f89705;
         filter: blur(0px);
 /*         text-shadow: 0 0 10px #f89705, 0 0 20px #f89705, 0 0 40px #f89705, 0 0 80px #f89705, 0 0 120px #f89705, 0 0 200px #f89705 */
+        text-shadow: 0 0 10px #f89705, 0 0 20px #f89705, 0 0 40px #f89705;
     }
     50%,
     100% {
-        color: #111;
+        color: #f89705;
         filter: blur(0px);
         text-shadow: none;
     }
