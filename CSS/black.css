@@ -45,7 +45,7 @@ h1 span {
     display: table-cell;
     margin: 0;
     padding: 0;
-    animation: animate 2s linear infinite;
+    animation: animate 1.5s linear infinite;
 }
 
 /* h1 span:nth-child(1) {
@@ -101,7 +101,7 @@ h1 span:nth-child(6) {
     top: 50% !important;
     position: absolute;
     left: 25% !important;
-    animation: animateHert alternate 0.5s infinite;
+    animation: animateHert alternate 0.75s infinite;
     top: 0;
 }
 
@@ -110,7 +110,7 @@ h1 span:nth-child(6) {
     top: 50% !important;
     position: absolute;
     right: 25% !important;
-    animation: animateHert alternate 0.5s infinite;
+    animation: animateHert alternate 0.75s infinite;
     top: 0;
 }
 
