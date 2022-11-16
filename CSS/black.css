@@ -19,8 +19,8 @@ body {
 
 #teacher {
     top: 20%;
-    font-size: 4px;
-    line-height: 4px;
+    font-size: 21px;
+    line-height: 1px;
     text-align: justify;
     -webkit-background-size: cover;
     background-size: cover;
@@ -48,7 +48,7 @@ h1 span {
     animation: animate 2s linear infinite;
 }
 
-h1 span:nth-child(1) {
+/* h1 span:nth-child(1) {
     animation-delay: 0s;
 }
 
@@ -70,17 +70,17 @@ h1 span:nth-child(5) {
 
 h1 span:nth-child(6) {
     animation-delay: 1.25s;
-}
+} */
 
 @keyframes animate {
     0%,
-    100% {
+    50% {
         color: #fff;
         filter: blur(2px);
         text-shadow: 0 0 10px #f89705, 0 0 20px #f89705, 0 0 40px #f89705, 0 0 80px #f89705, 0 0 120px #f89705, 0 0 200px #f89705
     }
-    5%,
-    95% {
+    50%,
+    100% {
         color: #111;
         filter: blur(0px);
         text-shadow: none;
@@ -177,9 +177,9 @@ h1 span:nth-child(6) {
 
 @keyframes animateHert {
     0% {
-        transform: scale(1);
+        transform: scale(1.2);
     }
     100% {
-        transform: scale(1.2);
+        transform: scale(1);
     }
 }
