@@ -83,7 +83,7 @@ body {
 
 .present-box.open>.side.front {
     transition: transform 2000ms 0s, opacity 500ms 600ms, width 600ms 600ms;
-    transform: translateZ(100px) rotateY(190deg) translateX(0px);
+    transform: translateZ(100px) rotateY(-362deg) translateX(0px);
     transform-origin: 0% 0%;
     opacity: 0;
     width: 0;
