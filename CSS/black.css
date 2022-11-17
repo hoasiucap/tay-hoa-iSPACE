@@ -29,7 +29,7 @@ body {
 #teacher {
     animation: teacher alternate 3s infinite;
     top: 20%;
-    font-size: 21px;
+    font-size: 48px;
     line-height: 1px;
     text-align: justify;
     -webkit-background-size: cover;
